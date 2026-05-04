@@ -3,10 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lễ Tốt Nghiệp — Đỗ Thị Thanh Bình</title>
+<title>DTTBfine thân mời các vợ iu tới dự lễ tốt nghiệp</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Fleur+De+Leah&family=Gwendolyn:wght@400;700&family=Imperial+Script&family=Mea+Culpa&family=Praise&family=Style+Script&family=Updock&display=swap" rel="stylesheet"><style>
   :root {
     --rose:    #f2c4ce;
     --blush:   #fde8ed;
@@ -17,13 +25,27 @@
     --text-mid:   #7a5870;
     --text-light: #b99aae;
     --white:   #ffffff;
+    --font-script: 'Great Vibes', cursive;
+    --fleur-de-leah: 'Fleur De Leah', cursive;
+    --updock: 'Updock', cursive;
+    --style-script: 'Style Script', cursive;
+    --birthstone-bounce: 'Birthstone Bounce', cursive;
+    --imperial-script: 'Imperial Script', cursive;
+    --praise: 'Praise', cursive;
+    --mea-culpa: 'Mea Culpa', cursive;
+    --gwendolyn: 'Gwendolyn', cursive;
+    --pinyon-script: 'Pinyon Script', cursive;
+    --literata: 'Literata', serif;
+    --open-sans: 'Open Sans', sans-serif;
+    --font-script: 'Great Vibes', cursive;
+    --google-san: 'Google Sans Flex', sans-serif;
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
 
   body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--google-san);
     background: var(--cream);
     color: var(--text-dark);
     min-height: 100vh;
@@ -101,25 +123,59 @@
   }
 
   .eyebrow {
+    font-family: var(--open-sans);
     display: inline-block;
-    font-size: 10px;
+    font-size: 14px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--text-mid);
-    background: rgba(255,255,255,0.6);
-    border: 1px solid rgba(200,170,200,0.35);
-    border-radius: 20px;
+    color: var(--text-dark);
     padding: 5px 16px;
-    margin-bottom: 1.4rem;
+    margin-bottom: -0.2rem;
+  }
+
+  .eyebrow2 {
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-mid);
+    margin-bottom: 0.2rem;
+  }
+
+  .title {
+    font-family: var(--literata);
+    font-size: clamp(38px, 6vw, 42px);
+    font-weight:800;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #f0738e, #bd85ee, #61b0f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* fallback cho một số browser */
+    background-clip: text;
+    color: transparent;
   }
 
   .avatar-ring {
-    display: inline-block;
+    display: block;
+    margin: 0 auto -20px;
     padding: 4px;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--rose), var(--lilac), var(--sky));
     margin-bottom: 1.2rem;
-    animation: spinRing 8s linear infinite;
+    /* animation: spinRing 8s linear infinite; */
+  }
+
+  .avatar-wappper {
+    display: flex;
+    margin: -80px auto 0;
+    /* background: linear-gradient(135deg, var(--rose), var(--lilac), var(--sky)); */
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    
+    /* animation: spinRing 8s linear infinite; */
   }
 
   @keyframes spinRing {
@@ -140,12 +196,13 @@
   }
 
   .grad-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(26px, 6vw, 30px);
-    font-weight: 600;
+    font-family: var(--birthstone-bounce);
+    font-size: clamp(44px, 6vw, 48px);
+    font-weight: 400;
     color: var(--text-dark);
     margin-bottom: 6px;
     letter-spacing: 0.5px;
+    z-index: 999;
   }
 
   .grad-meta {
@@ -161,7 +218,7 @@
     gap: 12px;
     justify-content: center;
     margin: 1.2rem 0;
-    opacity: 0.45;
+    opacity: 0.65;
   }
 
   .ornament::before, .ornament::after {
@@ -169,10 +226,10 @@
     flex: 1;
     max-width: 80px;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--rose));
+    background: linear-gradient(90deg, transparent, #bc7eb1);
   }
 
-  .ornament::after { background: linear-gradient(90deg, var(--rose), transparent); }
+  .ornament::after { background: linear-gradient(90deg, #bc7eb1, transparent); }
   .ornament span { font-size: 14px; color: var(--text-mid); }
 
   .hero-quote {
@@ -350,11 +407,10 @@
   }
 
   .toggle-btn {
-    padding: 11px;
     border: 1px solid rgba(200,170,210,0.5);
-    border-radius: 12px;
+    border-radius: 30%;
     font-size: 13px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--google-san);
     cursor: pointer;
     background: rgba(253,232,237,0.3);
     color: var(--text-mid);
@@ -460,6 +516,354 @@
     .section, .rsvp-section { padding-left: 2.2rem; padding-right: 2.2rem; }
     .countdown-wrap { margin-left: 2.2rem; margin-right: 2.2rem; }
   }
+
+  /* ── FLOATING BUTTONS ── */
+  /* ── MAP OVERLAY ── */
+  #map-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(234, 197, 197, 0.65);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 20px;
+  }
+
+  #map-card {
+      background: #fdf8f0;
+      border-radius: 24px;
+      border: 1px solid rgba(201, 168, 76, 0.4);
+      box-shadow: 0 32px 80px rgba(26, 35, 64, 0.35);
+      width: min(480px, calc(100vw - 32px));
+      max-height: 90vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+      animation: cardIn 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .map-header {
+      background: linear-gradient(135deg, rgba(242,196,206,0.7), rgba(221,200,240,0.6));
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+  }
+
+  .map-header-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  }
+
+  /* Nút quay lại thiệp */
+  .map-back {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(234, 89, 89, 0.22);
+      border: 1px solid rgba(201, 168, 76, 0.4);
+      border-radius: 50px;
+      padding: 5px 12px 5px 9px;
+      color: var(--text-mid);
+      font-family:'Times New Roman', Times, serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      white-space: nowrap;
+  }
+  .map-back:hover {
+      background: rgba(232, 207, 130, 0.12);
+      color: var(--text-dark);
+  }
+  .map-back svg { flex-shrink: 0; }
+
+  .map-header-title {
+      font-family:var(--font-script);
+      font-size: 1.5rem;
+      /* font-style: italic; */
+      color: var(--text-dark);
+  }
+
+  .map-tabs {
+      display: flex;
+      border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+      background: #fdf8f0;
+  }
+
+  .map-tab {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      background: transparent;
+      font-family:'Times New Roman', Times, serif;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #724e00;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+  }
+  .map-tab.active { color: #bc7eb1; border-bottom-color: #c9a84c; }
+
+  .map-body { padding: 16px 20px 20px; }
+
+  .map-gate-info {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 12px;
+      padding: 10px 14px;
+      border-radius: 12px;
+  }
+  .map-gate-icon { flex-shrink: 0; margin-top: 1px; }
+  .map-gate-name {
+      font-family: 'Times New Roman', serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #780f0f;
+      display: block;
+      margin-bottom: 2px;
+      text-transform: uppercase;
+  }
+  .map-gate-addr { font-size: 0.75rem; color: #775b0a; font-family: 'Times New Roman', Times, serif;}
+
+  .map-steps { list-style: none; padding: 0; margin: 0 0 14px; }
+  .map-steps li {
+      display: flex;
+      gap: 9px;
+      align-items: flex-start;
+      font-family:'Times New Roman', Times, serif;
+      font-size: 0.92rem;
+      color: var(--text-dark);
+      line-height: 1.6;
+      margin-bottom: 8px;
+  }
+  .map-step-num {
+      width: 20px; height: 20px;
+      border-radius: 50%;
+      background: rgba(234, 89, 89, 0.22);
+      color: #fff;
+      font-family:'Times New Roman', Times, serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+  }
+
+  .map-iframe-wrap {
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(201, 168, 76, 0.3);
+  }
+  .map-iframe-wrap iframe {
+      display: block;
+      width: 100%;
+      height: 240px;
+      border: none;
+  }
+
+  .map-open-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 10px;
+      font-family:'Times New Roman', Times, serif;
+      font-size: 0.78rem;
+      color: #8e6a05;
+      text-decoration: none;
+  }
+  .map-open-link:hover { color: #1a2340; }
+
+  .map-pane { display: none; }
+  .map-pane.active { display: block; }
+
+  .warn-box {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      background: rgba(224, 152, 18, 0.12);
+      border-radius: 10px;
+      padding: 9px 13px;
+      margin-bottom: 12px;
+      font-size: 0.78rem;
+      color: #494242;
+      font-style: italic;
+      font-family: 'Times New Roman', Times, serif;
+  }
+
+  /* Destination badge */
+  .dest-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      margin-bottom: 12px;
+      font-family: 'Times New Roman', serif;
+      font-size: 1rem;
+      color: #1a2340;
+  }
+  .dest-badge strong {
+      font-style: normal;
+      font-weight: 700;
+  }
+
+  @media(max-width: 480px) {
+      #map-overlay { align-items: flex-end !important; padding: 0 !important; }
+      #map-card {
+          border-radius: 24px 24px 0 0 !important;
+          width: 100% !important;
+          max-height: 92vh;
+      }
+      .map-iframe-wrap iframe { height: 200px; }
+  }
+
+  /* ── RSVP OVERLAY ── */
+  #rsvp-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(229, 215, 243, 0.65);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 20px;
+  }
+
+  #rsvp-card {
+      background: var(--rose);
+      border-radius: 24px;
+      box-shadow: 0 32px 80px rgba(26, 35, 64, 0.35);
+      padding: clamp(24px, 6vw, 36px) clamp(20px, 6vw, 32px) clamp(20px, 5vw, 28px);
+      width: min(380px, calc(100vw - 32px));
+      text-align: center;
+      position: relative;
+      animation: cardIn 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .rsvp-emoji { font-size: clamp(2rem, 6vw, 2.4rem); margin-bottom: 12px; }
+  .rsvp-title {
+      font-family: var(--style-script);
+      font-size: clamp(1.8rem, 4vw, 2.1rem);
+      color: #1a2340;
+      line-height: 1.5;
+      margin-bottom: 8px;
+  }
+  .rsvp-sub { font-family: var(--google-san); font-size: clamp(0.72rem, 2.2vw, 0.8rem); color: var(--text-mid); margin-bottom: 16px; letter-spacing: 0.5px; }
+
+  #btn-yes-wrap { width: 100%; display: flex; justify-content: center; }
+  #btn-yes {
+    width: 60%;
+    border-radius: 50px;
+    padding: 13px 0;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    background: linear-gradient(135deg, var(--rose), var(--lilac), var(--sky));
+    color: var(--text-dark);
+    box-shadow: 0 2px 10px rgba(180,130,190,0.15);
+  }
+  #btn-yes:hover { transform: scale(1.05); box-shadow: 0 6px 20px rgba(26, 35, 64, 0.25); }
+
+  #btn-arena {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  #btn-no {
+    position: absolute;
+    right: 0; bottom: 8px; left: auto; top: auto;
+    width: clamp(90px, 38%, 130px);
+    background: rgba(240,242,248,0.8);
+    color: #8a94a8;
+    border-radius: 50px;
+    padding: 12px 10px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  #troll-msg {
+      font-family: var(--google-san);
+      font-size: 8px;
+      color: var(--text-mid);
+      min-height: 22px;
+      margin-top: 8px;
+      transition: opacity 0.3s;
+      opacity: 0;
+  }
+
+  .rsvp-screen { display: none; }
+  .thanks-emoji { font-size: clamp(2.4rem, 7vw, 3rem); margin-bottom: 16px; animation: popIn 0.5s both; }
+  .thanks-title {
+      font-size: clamp(1.6rem, 5vw, 2rem);
+      color: #1a2340;
+      margin-bottom: 10px;
+  }
+  .thanks-body {
+      font-size: clamp(0.95rem, 3vw, 1.05rem);
+      color: var(--text-mid);
+      line-height: 1.7;
+      margin-bottom: 24px;
+  }
+  .btn-close-yes {
+      background: linear-gradient(135deg, var(--rose), var(--lilac), var(--sky));
+      color: var(--text-dark);
+      border: none;
+      border-radius: 50px;
+      padding: 11px 28px;
+      font-family: 'Times New Roman', serif;
+      font-weight: 600;
+      font-size: clamp(0.82rem, 2.5vw, 0.9rem);
+      cursor: pointer;
+  }
+  .btn-close-no {
+      background: #f0f2f8;
+      color: var(--text-mid);
+      border: 1.5px solid #d0d5e0;
+      border-radius: 50px;
+      padding: 11px 28px;
+      font-family: 'Times New Roman', serif;
+      font-weight: 500;
+      font-size: 14px;
+      cursor: pointer;
+  }
+
+  @keyframes popIn {
+      from { transform: scale(0.5); opacity: 0; }
+      to   { transform: scale(1);   opacity: 1; }
+  }
+  @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @media(max-width:480px) {
+      #rsvp-overlay { align-items: flex-end !important; padding: 0 !important; }
+      #rsvp-card { border-radius: 24px 24px 0 0 !important; width: 100% !important; padding-bottom: 40px !important; }
+  }
 </style>
 </head>
 <body>
@@ -473,25 +877,38 @@
         <span>✦</span><span>·</span><span>·</span>
       </div>
 
-      <div class="eyebrow">Trân trọng kính mời</div>
+      <div class="eyebrow">Thư mời</div>
+      <div class="title">Lễ Tốt Nghiệp</div>
 
-      <div>
-        <div class="avatar-ring">
-          <div class="avatar-inner">🎓</div>
-          <!-- Thay bằng ảnh: <img src="img/avatar.jpg" style="width:88px;height:88px;border-radius:50%;object-fit:cover;border:3px solid white;display:block"> -->
+
+      <div class="avatar-wappper ">
+        <!-- <div class="avatar-ring"> -->
+          <!-- <div class="avatar-inner">🎓</div> -->
+        <!-- </div> -->
+          <img src="avatar.png" style="width:358px;height:358px;object-fit:cover;display:block; z-index: 10;">
+
+      </div>
+
+      <div class="grad-name" style="z-index: 999;">Đỗ Thị Thanh Bình</div>
+
+      <div style="display: flex; flex-direction: column;">
+        <div class="eyebrow2">
+          Trân trọng kính mời bạn tới tham dự
+        </div>
+
+        <div class="eyebrow2" style="font-size: 16px; font-weight: 400;">
+          lễ tốt nghiệp
         </div>
       </div>
 
-      <div class="grad-name">Đỗ Thị Thanh Bình</div>
-      <div class="grad-meta">
-        Cử nhân Công nghệ Thông tin - Khoa Học Máy Tính<br>
-        Đại học Bách Khoa Hà Nội — Khóa 2021–2025
+      <div class="grad-meta" style="text-transform: uppercase; font-size: 16px; font-weight: 600; font-family: var(--google-san);">
+        Đại học Bách Khoa Hà Nội
       </div>
 
       <div class="ornament"><span>✦</span></div>
 
       <p class="hero-quote">
-        "Sau bốn năm nỗ lực, mình trân trọng được chia sẻ khoảnh khắc ý nghĩa này cùng những người thân yêu."
+        "Sự hiện diện của bạn là niềm vinh dự lớn đối với mình, mong các vợ iu tới chung vui, gấc iu các vợ nhé!"
       </p>
     </div>
 
@@ -512,7 +929,7 @@
           <div class="info-icon">📍</div>
           <div class="info-label">Địa điểm</div>
           <div class="info-value">
-            Hội trường tầng 10 Thư viện Tạ Quang Bửu – Đại học Bách khoa Hà Nội
+            Hội trường C2 – Đại học Bách khoa Hà Nội
             <small>Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</small>
           </div>
         </div>
@@ -532,35 +949,214 @@
     </div>
 
     <div class="rsvp-section">
-      <div class="rsvp-heading">Bạn có tham dự không?</div>
-      <div class="rsvp-sub">Vui lòng xác nhận trước ngày 08/05/2026</div>
+      <div class="rsvp-heading" style="font-family: var(--gwendolyn); font-size: 44px;">Góc tâm sự</div>
+      <div class="rsvp-sub">Các vợ iu có lời nào muốn thổ lộ với anh khum? <br> 💗</div>
 
       <div class="field">
-        <input type="text" id="rsvp-name" placeholder="Họ và tên của bạn *" />
+        <input type="text" id="rsvp-name" placeholder="Ehehe... " />
       </div>
 
       <div class="toggle-row">
-        <button class="toggle-btn active" id="btn-yes" onclick="pick('yes')">✓ Sẽ tham dự</button>
-        <button class="toggle-btn" id="btn-no" onclick="pick('no')">✗ Không thể đến</button>
+       <!--  <button class="toggle-btn active" id="btn-yes" onclick="pick('yes')">✓ Sẽ tham dự</button>
+        <button class="toggle-btn" id="btn-no" onclick="pick('no')">✗ Không thể đến</button> -->
+
+        <button class="btn-submit" id="map-trigger" onclick="openMap()">🗺 Bản đồ</button>
+        <button class="btn-submit" id="rsvp-trigger" onclick="openPopup()">💌 Xác nhận</button>
+
       </div>
 
-      <button class="btn-submit" id="btn-submit" onclick="submitRsvp()">Gửi xác nhận</button>
+      <!-- <button class="btn-submit" id="btn-submit" onclick="submitRsvp()">Gửi xác nhận</button> -->
 
       <div class="alert success" id="msg-success"></div>
       <div class="alert error" id="msg-error"></div>
+
+    <!-- ════════════════════════════════════════
+    MAP OVERLAY
+    Điểm đến: Hội trường C2, ĐHBK HN
+    Tọa độ: 21.00540, 105.84300
+    ════════════════════════════════════════ -->
+    <div id="map-overlay">
+        <div id="map-card">
+
+            <div class="map-header">
+                <div class="map-header-left">
+                    <!-- NÚT QUAY LẠI THIỆP -->
+                    <button class="map-back" onclick="closeMap()">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                        Quay lại thiệp
+                    </button>
+                </div>
+                <span class="map-header-title">Hướng dẫn đường đi</span>
+            </div>
+
+            <div class="map-tabs">
+                <button class="map-tab active" id="mtab-xemay" onclick="switchMapTab('xemay')">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17.5" r="2.5"/><circle cx="18.5" cy="17.5" r="2.5"/><path d="M8 17.5h7M15 6h2l2 4.5M9 6l1 5.5h5.5"/><path d="M3 9.5h4l2 8"/></svg>
+                    Xe máy
+                </button>
+                <button class="map-tab" id="mtab-oto" onclick="switchMapTab('oto')">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="9" width="22" height="9" rx="2"/><path d="M4 9l2-5h12l2 5"/><circle cx="7.5" cy="18.5" r="1.5"/><circle cx="16.5" cy="18.5" r="1.5"/></svg>
+                    Ô tô
+                </button>
+            </div>
+
+            <!-- XE MÁY -->
+            <div id="mpane-xemay" class="map-pane active">
+                <div class="map-body">
+                    <div class="dest-badge">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                        Điểm đến: <strong>Hội trường C2, ĐHBK Hà Nội</strong>
+                    </div>
+
+                    <p style="font-family:'Times New Roman', Times, serif;font-size:0.88rem;color:#8a94a8;margin:0 0 12px">Chọn cổng thuận đường nhất với bạn:</p>
+
+                    <!-- Cổng Trần Đại Nghĩa -->
+                    <div class="map-gate-info">
+                        <svg class="map-gate-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                        <div>
+                            <span class="map-gate-name">Cổng Trần Đại Nghĩa</span>
+                            <span class="map-gate-addr">2 Trần Đại Nghĩa, Bạch Mai, Hà Nội</span>
+                        </div>
+                    </div>
+                    <ul class="map-steps">
+                        <li><span class="map-step-num">1</span>Vào cổng từ đường Trần Đại Nghĩa, rẽ trái sau cổng.</li>
+                        <li><span class="map-step-num">2</span>Đi theo trục D7-ITP hướng Hồ Tiên.</li>
+                        <li><span class="map-step-num">3</span>Hội trường C2 ở bên trái sau khi qua D4. Gửi xe tại bãi C.</li>
+                    </ul>
+                    <!-- OSM iframe — điểm đến: thư viện TQB (21.0054, 105.8430) -->
+                    <div class="map-iframe-wrap">
+                        <iframe
+                            loading="lazy"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=105.8385%2C21.0040%2C105.8470%2C21.0095&layer=mapnik&marker=21.00680%2C105.84300"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <a class="map-open-link"
+                        href="https://www.google.com/maps/dir/2+Trần+Đại+Nghĩa,+Bạch+Mai,+Hà+Nội/Hội+trường+C2,+Đại+học+Bách+Khoa+Hà+Nội/@21.0054,105.8430,17z"
+                        target="_blank">
+                        ↗ Mở chỉ đường trong Google Maps
+                    </a>
+
+                    <!-- Cổng Bắc -->
+                    <div class="map-gate-info" style="margin-top:20px">
+                        <svg class="map-gate-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                        <div>
+                            <span class="map-gate-name">Cổng Bắc (Đại Cồ Việt)</span>
+                            <span class="map-gate-addr">Đại Cồ Việt, Bạch Mai, Hà Nội</span>
+                        </div>
+                    </div>
+                    <ul class="map-steps">
+                        <li><span class="map-step-num">1</span>Vào từ đường Đại Cồ Việt, đi thẳng vào trục chính C1→C5.</li>
+                        <li><span class="map-step-num">2</span>Rẽ trái xuống khu D, đi về phía Hồ Tiên.</li>
+                        <li><span class="map-step-num">3</span>Hội trường C2 nằm khu vực trục C, bên phải. Gửi xe tại bãi C.</li>
+                    </ul>
+                    <div class="map-iframe-wrap">
+                        <iframe
+                            loading="lazy"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=105.8385%2C21.0040%2C105.8470%2C21.0095&layer=mapnik&marker=21.00680%2C105.84300"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <a class="map-open-link"
+                        href="https://www.google.com/maps/dir/Cổng+Bắc+Đại+học+Bách+Khoa+Hà+Nội,+Đại+Cồ+Việt/Hội+trường+C2,+Đại+học+Bách+Khoa+Hà+Nội/@21.0054,105.8430,17z"
+                        target="_blank">
+                        ↗ Mở chỉ đường trong Google Maps
+                    </a>
+                </div>
+            </div>
+
+            <!-- Ô TÔ -->
+            <div id="mpane-oto" class="map-pane">
+                <div class="map-body">
+                    <div class="dest-badge">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                        Điểm đến: <strong>Hội trường C2, ĐHBK Hà Nội</strong>
+                    </div>
+
+                    <div class="warn-box">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        Ô tô chỉ được vào qua Cổng Parabol — cổng Bắc và Trần Đại Nghĩa không cho xe hơi vào.
+                    </div>
+
+                    <div class="map-gate-info">
+                        <svg class="map-gate-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                        <div>
+                            <span class="map-gate-name">Cổng Parabol</span>
+                            <span class="map-gate-addr">2 Đ. Giải Phóng, Bạch Mai, Hà Nội</span>
+                        </div>
+                    </div>
+                    <ul class="map-steps">
+                        <li><span class="map-step-num">1</span>Vào từ đường Giải Phóng qua Cổng Parabol.</li>
+                        <li><span class="map-step-num">2</span>Rẽ phải, đi qua khu D2 → D6 → D8 hướng Hồ Tiên.</li>
+                        <li><span class="map-step-num">3</span>Hội trường C2 nằm khu vực trục C. Đỗ xe tại bãi C2/C6.</li>
+                    </ul>
+                    <div class="map-iframe-wrap">
+                        <iframe
+                            loading="lazy"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=105.8385%2C21.0040%2C105.8470%2C21.0095&layer=mapnik&marker=21.00680%2C105.84300"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <a class="map-open-link"
+                        href="https://www.google.com/maps/dir/2+Đường+Giải+Phóng,+Bạch+Mai,+Hà+Nội/Hội+trường+C2,+Đại+học+Bách+Khoa+Hà+Nội/@21.0054,105.8430,17z"
+                        target="_blank">
+                        ↗ Mở chỉ đường trong Google Maps
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+        <!-- ════════════════════════════════════════
+         RSVP OVERLAY
+    ════════════════════════════════════════ -->
+    <div id="rsvp-overlay">
+        <div id="rsvp-card">
+            <div id="rsvp-question">
+                <div class="rsvp-emoji">🎓</div>
+                <p class="rsvp-title">Bạn có sắp xếp tham dự được không?</p>
+                <p class="rsvp-sub">hỏi nhanh đáp thật</p>
+                <div id="btn-arena">
+                    <button id="btn-no">Không, bận rùi</button>
+                </div>
+                <div id="btn-yes-wrap">
+                    <button id="btn-yes" onclick="showYes()">Đương nhiên sẽ đến rồi!</button>
+                </div>
+                <p id="troll-msg"></p>
+            </div>
+
+            <div id="rsvp-yes" class="rsvp-screen">
+                <p class="thanks-title" style="font-family:var(--style-script),cursive;font-size:clamp(1.5rem,5vw,1.9rem);color:#1a2340;margin-bottom:10px;">Ehehe biết ngay mà!</p>
+                <div class="thanks-emoji">😘</div>
+                <p class="thanks-body" style="font-family:'Times New Roman', Times, serif;">
+                    Tuyệt vời!<br />
+                    Hẹn gặp lại ngày <strong style="font-family:'Times New Roman',serif;color:#1a2340;font-style:normal;font-size:1.1em;letter-spacing:1px;">10/05</strong> nhé 🥳
+                </p>
+                <button class="btn-close-yes" onclick="closePopup()">Okiii</button>
+            </div>
+
+            <div id="rsvp-surrender" class="rsvp-screen">
+                <div class="thanks-emoji">😮‍💨</div>
+                <p class="thanks-title" style="font-family:'Great Vibes',cursive;font-size:clamp(1.5rem,5vw,1.9rem);color:#1a2340;margin-bottom:10px;">Thôi được rồi...</p>
+                <p class="thanks-body">Mình hiểu rồi 😔<br />Dù sao cũng cảm ơn vì đã đọc thiệp.<br />Nhớ mình nha! 🥹</p>
+                <button class="btn-close-no" onclick="closePopup()">Bái bai</button>
+            </div>
+        </div>
+    </div>
+
     </div>
 
     <div class="footer">
-      Trân trọng cảm ơn sự hiện diện của bạn 🌸<br>
-      Liên hệ: 0912 345 678
+      Hẹn các vợ iu chiều Chủ nhật ngày 10/5 nhé 🌸<br>
+      Liên hệ: 0386550045 
     </div>
 
   </div>
 </div>
 
 <script>
-  // ✅ Đã sửa: khớp đúng ngày lễ 10/05/2026 lúc 14:30
-  const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyfKhIexc176AUHAF6R597GO3kyTGwxK7XPjMqOgoj0BFjGL4isRHHMfcTxIK3Hin0/exec";
+  const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyG5u5YClvYTyEClcbXufIXLVsp8rOhxGr_Zx9Tf_7QPD25hwgZ43Fq_YGm6paCoRWQzg/exec";
   const TARGET_DATE = new Date("2026-05-10T14:30:00");
 
   function tick() {
@@ -645,6 +1241,225 @@
       show("error", "Có lỗi xảy ra, vui lòng thử lại sau. Hoặc liên hệ trực tiếp với mình nhé!");
     }
   }
+
+(() => {
+  // ── Hiện floating buttons sau 1.5s ──
+  setTimeout(() => {
+      document.getElementById('rsvp-trigger').style.opacity = '1';
+      document.getElementById('map-trigger').style.opacity  = '1';
+  }, 500);
+
+  // ── MAP ──────────────────────────────────────────────────────
+  window.openMap  = () => { document.getElementById('map-overlay').style.display = 'flex'; };
+  window.closeMap = () => { document.getElementById('map-overlay').style.display = 'none'; };
+
+  window.switchMapTab = (tab) => {
+      document.querySelectorAll('.map-tab').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.map-pane').forEach(p => p.classList.remove('active'));
+      document.getElementById('mtab-' + tab).classList.add('active');
+      document.getElementById('mpane-' + tab).classList.add('active');
+  };
+
+  // Click ngoài map card → đóng
+  document.getElementById('map-overlay').addEventListener('click', (e) => {
+      if (e.target === document.getElementById('map-overlay')) closeMap();
+  });
+
+  // ── RSVP ─────────────────────────────────────────────────────
+  window.openPopup = () => { document.getElementById('rsvp-overlay').style.display = 'flex'; };
+
+  const arena  = document.getElementById('btn-arena');
+  const btn    = document.getElementById('btn-no');
+  const btnYes = document.getElementById('btn-yes');
+
+  let phase      = 'idle';
+  let hoverCount = 0;
+  let isCooling  = false;
+  let savedLP    = null, savedBP = null;
+
+  const msgs = [
+      ' Ủa? Đến đây rồi à...',
+      ' Sao khó bắt vậy nhỉ?',
+      ' Cứ thử đi :))) ...',
+      '👀 Kiên trì dữ vậy trời!',
+      ' Mệt chưa?',
+      ' Noooooo ...',
+      ' Vẫn chưa bỏ cuộc à...',
+      ' Thôi tha cho mình đi...',
+      ' Bạn... ổn không?',
+  ];
+
+  function showMsg(txt) {
+      const el = document.getElementById('troll-msg');
+      el.style.opacity = '0';
+      setTimeout(() => { el.textContent = txt; el.style.opacity = txt ? '1' : '0'; }, 150);
+  }
+
+  function randomPos() {
+      const aw = arena.clientWidth, ah = arena.clientHeight;
+      const bw = btn.offsetWidth || 100, bh = btn.offsetHeight || 44;
+      const pad = 6;
+      return {
+          left:   pad + Math.random() * Math.max(pad, aw - bw - pad * 2),
+          bottom: pad + Math.random() * Math.max(pad, ah - bh - pad * 2),
+      };
+  }
+
+  function applyPos(left, bottom, animate) {
+      btn.style.transition = animate
+          ? 'left 0.22s cubic-bezier(0.34,1.56,0.64,1), bottom 0.22s cubic-bezier(0.34,1.56,0.64,1)'
+          : 'none';
+      btn.style.left   = left   + 'px';
+      btn.style.bottom = bottom + 'px';
+      btn.style.right  = 'auto';
+      btn.style.top    = 'auto';
+  }
+
+  function savePos(l, b) {
+      savedLP = l / arena.clientWidth  * 100;
+      savedBP = b / arena.clientHeight * 100;
+  }
+
+  function clampAndApply(animate) {
+      if (savedLP === null) return;
+      const aw = arena.clientWidth, ah = arena.clientHeight;
+      const bw = btn.offsetWidth || 100, bh = btn.offsetHeight || 44;
+      const pad = 6;
+      const l = Math.min(Math.max(pad, savedLP / 100 * aw), aw - bw - pad);
+      const b = Math.min(Math.max(pad, savedBP / 100 * ah), ah - bh - pad);
+      applyPos(l, b, animate);
+  }
+
+  window.addEventListener('resize', () => {
+      if (phase === 'fly' || phase === 'vanished') clampAndApply(false);
+  });
+
+  function teleport() {
+      const pos = randomPos();
+      applyPos(pos.left, pos.bottom, true);
+      savePos(pos.left, pos.bottom);
+  }
+
+  function wobble() {
+      const angles = [-8, 8, -6, 6, 0];
+      let i = 0;
+      btn.style.transition = 'transform 0.08s ease';
+      const tick = () => {
+          if (i >= angles.length) { btn.style.transform = ''; return; }
+          btn.style.transform = `rotate(${angles[i++]}deg)`;
+          setTimeout(tick, 80);
+      };
+      tick();
+      showMsg(' Ủa? Bấm được không ta?');
+  }
+
+  function vanish() {
+      phase = 'vanished';
+      btn.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+      btn.style.opacity    = '0';
+      btn.style.transform  = 'scale(0.15)';
+      btn.style.pointerEvents = 'none';
+  }
+
+  function restore() {
+      phase = 'fly';
+      clampAndApply(false);
+      requestAnimationFrame(() => {
+          btn.style.transition    = 'opacity 0.4s ease, transform 0.4s ease';
+          btn.style.opacity       = '1';
+          btn.style.transform     = 'scale(1)';
+          btn.style.pointerEvents = '';
+      });
+      showMsg('👀 Lại đây rồi...');
+  }
+
+  btn.addEventListener('click', (e) => {
+      e.preventDefault(); e.stopPropagation();
+      if (phase === 'vanished') return;
+      if (phase === 'idle')     { phase = 'wobbled'; wobble(); }
+      else if (phase === 'wobbled') { phase = 'fly'; teleport(); showMsg('Bắt được thì bấm nha, gắng lên!'); }
+      else if (phase === 'fly')  { vanish(); showMsg(' Bắt được rồi! À mà... '); }
+  });
+
+  function onNoEnter() {
+      if (phase !== 'fly' || isCooling) return;
+      isCooling = true;
+      setTimeout(() => { isCooling = false; }, 240);
+      hoverCount++;
+      teleport();
+      const idx = Math.min(Math.floor(hoverCount / 2), msgs.length - 1);
+      showMsg(msgs[idx]);
+      if (hoverCount >= 5) {
+          const chance = Math.min(0.72, 0.15 + (hoverCount - 5) * 0.057);
+          if (Math.random() < chance) { vanish(); showMsg(' Rồi xong! Hết sự lựa chọn rùi...'); }
+      }
+  }
+
+  btn.addEventListener('mouseenter', onNoEnter);
+  btnYes.addEventListener('mouseenter', () => { if (phase === 'vanished') restore(); });
+
+  btn.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+      if (phase === 'idle')         { phase = 'wobbled'; wobble(); }
+      else if (phase === 'wobbled') { phase = 'fly'; teleport(); showMsg('Bắt được thì bấm nha, gắng lên!'); }
+      else if (phase === 'fly')     { vanish(); showMsg(' Bắt được rồi! À mà... '); }
+  }, { passive: false });
+
+  arena.addEventListener('touchmove', (e) => {
+      if (phase !== 'fly') return;
+      const touch = e.touches[0];
+      const el = document.elementFromPoint(touch.clientX, touch.clientY);
+      if (el === btn || btn.contains(el)) onNoEnter();
+  }, { passive: true });
+
+  btnYes.addEventListener('touchstart', () => {
+      if (phase === 'vanished') restore();
+  }, { passive: true });
+
+  function resetBtn() {
+      btn.removeAttribute('style');
+      phase = 'idle'; hoverCount = 0; isCooling = false;
+      savedLP = savedBP = null;
+  }
+
+    window.showYes = async () => {
+    document.getElementById('rsvp-question').style.display = 'none';
+    document.getElementById('rsvp-yes').style.display = 'block';
+    resetBtn();
+
+    const tamSu = document.getElementById('rsvp-name').value.trim();
+
+    const payload = {
+        name:      tamSu || "(Không để lại lời nhắn)",
+        attending: "Tham dự",
+        timestamp: new Date().toLocaleString("vi-VN")
+    };
+
+    try {
+        await fetch(APPS_SCRIPT_URL, {
+        method:  "POST",
+        mode:    "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body:    JSON.stringify(payload)
+        });
+    } catch (err) {
+        console.error("Lỗi gửi RSVP:", err);
+    }
+    };
+
+  window.closePopup = () => {
+      document.getElementById('rsvp-overlay').style.display = 'none';
+      document.getElementById('rsvp-question').style.display = 'block';
+      document.getElementById('rsvp-yes').style.display      = 'none';
+      document.getElementById('rsvp-surrender').style.display = 'none';
+      resetBtn();
+      showMsg('');
+  };
+
+  document.getElementById('rsvp-overlay').addEventListener('click', (e) => {
+      if (e.target === document.getElementById('rsvp-overlay')) closePopup();
+  });
+})();
 </script>
 </body>
 </html>
